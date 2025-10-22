@@ -123,7 +123,8 @@ public class AiChatEndpoint implements CustomEndpoint {
     record AiChatBaseSetting(boolean isAnonymous, String systemMessage) {
         AiChatBaseSetting {
             if (StringUtils.isBlank(systemMessage)) {
-                throw new IllegalArgumentException("system message must not be null");
+                systemMessage = "you are a help assistant.";
+                log.warn("system message is null or blank, using default value");
             }
         }
     }

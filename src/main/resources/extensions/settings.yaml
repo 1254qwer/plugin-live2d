@@ -224,7 +224,7 @@ spec:
               label: 角色设定
               name: systemMessage
               rows: 10
-              validation: String
+              validation: required|String
             - $formkit: text
               label: 接口超时时间（秒）
               name: timeout
