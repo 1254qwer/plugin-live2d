@@ -22,11 +22,11 @@ import run.halo.live2d.chat.client.ChatClient;
 @Slf4j
 @Component
 public class OpenAiChatClient implements ChatClient {
-    public final static String DEFAULT_OPEN_AI_API_URL = "https://api.openai.com";
+    public final static String DEFAULT_OPEN_AI_API_URL = "https://api.openai.com/v1";
 
-    public final static String CHAT_COMPLETION_PATH = "/v1/chat/completions";
+    public final static String CHAT_COMPLETION_PATH = "/chat/completions";
 
-    public final static String DEFAULT_MODEL = "gpt-3.5-turbo";
+    public final static String DEFAULT_MODEL = "deepseek-v3";
 
     private final ReactiveSettingFetcher reactiveSettingFetcher;
 
