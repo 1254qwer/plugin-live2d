@@ -289,7 +289,7 @@ spec:
             - $formkit: text
               if: "$value.isOpenAi === true"
               label: TOKEN
-              help: sk-xxx，可在 https://beta.openai.com/account/api-keys 获取
+              help: sk-xxxx，可在 https://beta.openai.com/account/api-keys 获取
               name: openAiToken
               validation: required|String
             - $formkit: text
